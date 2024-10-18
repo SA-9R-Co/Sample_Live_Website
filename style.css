@@ -1,0 +1,88 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Impact;
+    background-image: url(https://img.freepik.com/free-vector/futuristic-background-design_23-2148503793.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body {
+    background-image: url(https://img.freepik.com/free-vector/futuristic-background-design_23-2148503793.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100;
+    margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    color: skyblue;
+    background-color: #ffe4e1;
+    text-align: center;
+    border: 5px solid red;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.5s;
+    animation: fadein 1s;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    border: 5px solid red;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: slidein 0.5s ease-out;
+}
+
+input[type="text"], input[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid red;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: red;
+}
+
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: blue;
+    transform: scale(1.05);
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1;}
+}
+
+@keyframes slidein {
+    from { transform: translate(-50px); 
+        opacity: 0;
+}
+
+    to { transform: translate(0); opacity: 1; }
+}
